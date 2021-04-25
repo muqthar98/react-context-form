@@ -5,7 +5,6 @@ import Event1 from './Event1'
 import Event2 from './Event2'
 import './App.css';
 
-
 const WizardContext = React.createContext()
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
   const[name,setName] = useState('')
   const[email,setEmail] = useState('')
   const[address,setAddress] = useState('')
-
 
   return (
 
@@ -24,6 +22,7 @@ function App() {
       <Route path="/event2" component={Event2}/>
       </Router>
     </WizardContext.Provider>
+    
   );
 }
 

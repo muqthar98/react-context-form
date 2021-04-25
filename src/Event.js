@@ -8,14 +8,13 @@ function Event() {
     const{name,setName} = useContext(WizardContext)
 
     return (
-
-            <form>
+            <form className="form">
                 <label>Name</label>
                 <div/>
                 <input value={name} onChange={event => setName(event.target.value)}/>
                 <div/>
                 <Link to="/event1">
-                <button>Next</button>
+                <button className="btn btn-md btn-success">Next</button>
                 </Link>
             </form>
     )
